@@ -1,11 +1,10 @@
 from PySide6.QtWidgets import QApplication
-from lec3_mainwindow import MainWindow
-
+from widget import Widget
 import sys
 
 app = QApplication(sys.argv)
 
-window = MainWindow(app)
-window.show()
+widget = Widget()
+widget.show()
 
 app.exec()

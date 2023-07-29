@@ -56,7 +56,10 @@ class MainWindow (QMainWindow):
         # Working with Status Bar
         self.setStatusBar(QStatusBar(self))
 
-
+        # Central Widget
+        button1 = QPushButton("Button 1")
+        button1.clicked.connect(self.button1_clicked)
+        self.setCentralWidget(button1)
 
 
 
@@ -65,3 +68,9 @@ class MainWindow (QMainWindow):
 
     def toolbar_button_click(self):
         print("Custom Action 1 triggered")
+        # self.statusBar().showMessage("Message from Custom Action")
+        self.statusBar().showMessage("Message from Custom Action",3000)
+        # 3000 is the timeout , this paramater is optional
+
+    def button1_clicked(self):
+        print("Button 1 clicked")
