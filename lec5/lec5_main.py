@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import QApplication
-from lec4_widget import Widget
+from lec5_widget import Widget
 import sys
 
 app = QApplication(sys.argv)
